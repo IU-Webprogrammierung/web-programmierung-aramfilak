@@ -7,7 +7,7 @@
 
 ## Installation
 
-Install the dependencies:
+Install the dependencies 👨🏻‍🔧:
 
 ```sh
 npm install
@@ -15,7 +15,7 @@ npm install
 
 ## Running the Project
 
-To run the project locally, use the following command:
+To run the project locally, use the following command 👨🏻‍💻:
 
 ```sh
 npm run dev
@@ -23,7 +23,7 @@ npm run dev
 
 ## Build the Project
 
-To build the project, use the following command:
+To build the project, use the following command ⚙️:
 
 ```sh
 npm run build
@@ -31,7 +31,7 @@ npm run build
 
 ## Preview the Build
 
-To preview the production build, use the following command:
+To preview the production build, use the following command 🌄:
 
 ```sh
 npm run preview
