@@ -1,6 +1,4 @@
-# Vanilla JS Project
-
-This project is a simple web application built with vanilla JavaScript.
+# Development Instructions
 
 ## Prerequisites
 
