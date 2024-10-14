@@ -3,37 +3,45 @@
  */
 
 :root {
-  --background: #faf7f0;
-  --foreground: #1a1918;
-  --card: #f2e8d9;
-  --card-foreground: #2d2b29;
-  --popover: #faf7f0;
-  --popover-foreground: #1a1918;
-  --primary: #f7d700;
-  --primary-foreground: #ffffff;
-  --secondary: #f2e8d9;
-  --secondary-foreground: #000000;
-  --muted: #f7e6e0;
-  --muted-foreground: #6b6a68;
-  --accent: #f2e8d9;
-  --accent-foreground: #2d2b29;
-  --destructive: #800000;
-  --destructive-foreground: #faf7f0;
-  --border: #e0d9c7;
-  --input: #b3a68c;
-  --ring: #f7d700;
-  --radius: 0.3rem;
+  --background: #f8f8f8;
+  --foreground: #1a1a1a;
+  --muted: #f1f5f9;
+  --muted-foreground: #6c6f7d;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --border: #e9ecef;
+  --input: #e9ecef;
+  --primary: #ffa500;
+  --primary-foreground: #3c3b0d;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #3b3b3b;
+  --accent: #f1f5f9;
+  --accent-foreground: #3b3b3b;
+  --destructive: #ff3333;
+  --destructive-foreground: #fbfbff;
+  --ring: #0077ff;
+  --radius: 0.5rem;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
 
 
-  --break-point-sm: 640px;
-  --break-point-md: 768px;
-  --break-point-lg: 1024px;
-  --break-point-xl: 1280px;
-
-
-  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --shadow-hover: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   --transition: all 0.3s ease;
+
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 4rem;
 
 }
 
@@ -85,25 +93,25 @@ p {
   padding: 0 1rem;
 }
 
-@media (min-width: var(--break-point-sm)) {
+@media (min-width: var(--screen-sm)) {
   .container {
     padding: 0 2rem;
   }
 }
 
-@media (min-width: var(--break-point-md)) {
+@media (min-width: var(--screen-md)) {
   .container {
     padding: 0 4rem;
   }
 }
 
-@media (min-width: var(--break-point-lg)) {
+@media (min-width: var(--screen-lg)) {
   .container {
     padding: 0 6rem;
   }
 }
 
-@media (min-width: var(--break-point-xl)) {
+@media (min-width: var(--screen-xl)) {
   .container {
     padding: 0 8rem;
   }
