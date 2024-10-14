@@ -22,9 +22,14 @@
   --destructive: #ff3333;
   --destructive-foreground: #fbfbff;
   --ring: #0077ff;
-  --radius: 0.5rem;
+  --radius: 1rem;
+
+
   --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  --shadow-btn-hover: 0 0 0 2px rgba(0, 0, 0, 0.2);
 
   --screen-sm: 640px;
   --screen-md: 768px;
@@ -87,11 +92,23 @@ p {
   line-height: 1.5;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 
 @media (min-width: var(--screen-sm)) {
   .container {
@@ -116,3 +133,119 @@ p {
     padding: 0 8rem;
   }
 }
+
+
+/*
+Animation
+*/
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/*
+ Header
+*/
+
+.header {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xl) var(--space-md);
+  margin-block: var(--space-lg);
+  transition: var(--transition);
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+  }
+
+
+  .profile-img {
+    max-width: 200px;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--primary);
+
+      &:hover {
+        animation: heartbeat 1s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 900;
+    margin-top: var(--space-sm);
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    margin-top: var(--space-xs);
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      width: 3.2rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background);
+      box-shadow: var(--shaodw-btn);
+      transition: var(--transition);
+      border-radius: var(--radius);
+
+      &:hover {
+        box-shadow: var(--shadow-btn-hover);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  nav > ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: var(--space-md);
+
+    li {
+      a {
+        color: var(--foreground);
+        font-weight: 600;
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+
+
+
