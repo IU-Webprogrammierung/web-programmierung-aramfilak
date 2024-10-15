@@ -29,7 +29,7 @@
   --shadow-hover: 0 0 20px rgba(0, 0, 0, 0.2);
 
   --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
-  --shadow-btn-hover: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  --shadow-btn-hover: 0 0 0 2px var(--primary);
 
   --screen-sm: 640px;
   --screen-md: 768px;
@@ -154,14 +154,26 @@ Animation
 }
 
 
+@keyframes slideOutFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+
 /*
  Header
 */
 
 .header {
-  background-color: var(--card);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,11 +181,9 @@ Animation
   padding: var(--space-xl) var(--space-md);
   margin-block: var(--space-lg);
   transition: var(--transition);
-
-  &:hover {
-    box-shadow: var(--shadow-hover);
-  }
-
+  backdrop-filter: blur(200px);
+  background-image: radial-gradient(closest-side at center, rgba(255, 165, 0, 0.16), var(--background));
+  animation: slideOutFromTop 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   .profile-img {
     max-width: 200px;
