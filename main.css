@@ -28,7 +28,7 @@
   --gradient: linear-gradient(45deg, #ffa500, #ff6347);
 
   --shadow: rgba(255, 165, 0, 0.1) 0px 0px 0px 1px;
-  --shadow-hover: rgba(255, 165, 0, 0.15) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
+  --shadow-hover: rgba(255, 165, 0, 0.05) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
 
   --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
   --shadow-btn-hover: 0 0 0 2px var(--primary);
@@ -243,15 +243,35 @@ section:nth-child(4) {
 
 .section-with-memoji {
   background-repeat: no-repeat;
-  background-position-y: 106%;
+  background-position-y: 105%;
   background-position-x: right;
   background-size: 150px;
   padding-bottom: 140px;
 
   &:hover {
-    background-position-y: 104%;
+    background-position-y: 103%;
   }
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-block: var(--space-md);
+  max-width: 42rem;
+  color: var(--card-foreground);
+
+  li {
+    padding-left: 1rem;
+
+    &:before {
+      content: '•';
+      color: var(--primary);
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 
 /*
 Animation
@@ -404,8 +424,11 @@ footer {
   Home Page
 */
 
-/* About Section */
+
 .about-me-page {
+
+  /* Sections */
+
   .about-me {
     background-image: url("/assets/images/aram-memoji-2.png");
 
@@ -417,20 +440,15 @@ footer {
     }
   }
 
-  /* Skills Section */
-
   .programming-skills {
     background-image: url("/assets/images/aram-memoji-6.png");
   }
 
-  /* Languages Section */
 
   .languages {
     background-image: url("/assets/images/aram-memoji-8.png");
 
   }
-
-  /* SoftKills Section */
 
   .soft-skills {
     background-image: url("/assets/images/aram-memoji-4.png");
