@@ -1,3 +1,4 @@
+/* Mobile*/
 /*
  Global styles
  */
@@ -24,18 +25,13 @@
   --ring: #0077ff;
   --radius: 1rem;
 
+  --gradient: linear-gradient(45deg, #ffa500, #ff6347);
 
   --shadow: rgba(255, 165, 0, 0.1) 0px 0px 0px 1px;
   --shadow-hover: rgba(255, 165, 0, 0.05) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
 
   --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
   --shadow-btn-hover: 0 0 0 2px var(--primary);
-
-  --screen-sm: 640px;
-  --screen-md: 768px;
-  --screen-lg: 1024px;
-  --screen-xl: 1280px;
-
 
   --timeing: cubic-bezier(.5, -.75, .7, 2);
   --transition: all 0.2s linear;
@@ -65,16 +61,13 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 90%;
 }
 
 body {
   font-family: "Mulish", serif;
   font-optical-sizing: auto;
   background-color: var(--background);
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
 }
 
 h1 {
@@ -87,34 +80,27 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 40px;
-  margin-block: var(--space-md);
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 40px;
-  margin-block: var(--space-sm);
-
 }
 
 h4 {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 20px;
-  margin-block: var(--space-xs);
 }
 
 p {
-  font-size: var(--font-size-md);
   font-weight: 400;
   line-height: 1.5;
 }
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -123,36 +109,10 @@ a {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
-
-
-@media (min-width: var(--screen-sm)) {
-  .container {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: var(--screen-md)) {
-  .container {
-    padding: 0 4rem;
-  }
-}
-
-@media (min-width: var(--screen-lg)) {
-  .container {
-    padding: 0 6rem;
-  }
-}
-
-@media (min-width: var(--screen-xl)) {
-  .container {
-    padding: 0 8rem;
-  }
-}
-
 
 section {
   padding: var(--space-lg) var(--space-md);
@@ -170,12 +130,12 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: var(--space-md);
 
     h3 {
-      background: linear-gradient(45deg, #ffa500, #ff6347);
+      background: var(--gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin: 0;
 
     }
   }
@@ -244,7 +204,7 @@ Animation
   background-image: radial-gradient(closest-side at center, rgba(255, 165, 0, 0.16), var(--background));
 
   .profile-img {
-    max-width: 200px;
+    max-width: min(100%, 200px);
     border-radius: 50%;
 
     img {
@@ -320,8 +280,41 @@ nav > ul {
   }
 }
 
+/*
+  Home Page
+*/
+
+/* About Section */
+.about-me {
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+  }
+}
+
+/* Tablet*/
+/*  768px */
+@media (min-width: 48em) {
+  html {
+    font-size: 95%;
+  }
+
+  .container {
+    padding-inline: 4rem;
+  }
+}
 
 
+/* Desktop*/
+/* 992px */
+@media (min-width: 62em) {
+  html {
+    font-size: 100%;
+  }
 
-
-
+  .container {
+    max-width: 1500px;
+  }
+}
