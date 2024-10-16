@@ -503,7 +503,22 @@ footer {
   }
 
   .soft-skills {
-    background-image: url("/assets/images/aram-memoji-4.png");
+    background-image: url("/assets/images/aram-memoji-10.png");
+  }
+}
+
+
+/*
+  Education Page
+*/
+
+.eduction-page {
+  .iu {
+    background-image: url("/assets/images/aram-memoji-6.png");
+  }
+
+  .leb {
+    background-image: url("/assets/images/aram-memoji-9.png");
   }
 }
 
@@ -546,6 +561,22 @@ footer {
     }
   }
 }
+
+
+/*
+  Experience Page
+*/
+
+.experience-page {
+  .tks-energy {
+    background-image: url("/assets/images/aram-memoji-5.png");
+  }
+
+  .tks {
+    background-image: url("/assets/images/aram-memoji-7.png");
+  }
+}
+
 
 /* Tablet*/
 /*  768px */
