@@ -34,7 +34,7 @@
   --shadow-btn-hover: 0 0 0 2px var(--primary);
 
   --timeing: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition: all 0.3s linear;
+  --transition: all 0.2s linear;
 
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
@@ -426,17 +426,24 @@ p {
 
 nav > ul {
   display: flex;
-  gap: 1.5rem;
-  margin-top: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: var(--space-lg);
 
   li {
     a {
       color: var(--foreground);
       font-weight: 600;
       transition: var(--transition);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: var(--radius);
+      background: var(--background);
+      box-shadow: var(--shaodw-btn);
 
-      &:hover {
-        color: var(--primary);
+      &:hover, &.active {
+        color: var(--primary-foreground);
+        box-shadow: var(--shadow-btn-hover);
       }
     }
   }
