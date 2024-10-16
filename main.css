@@ -206,13 +206,47 @@ section:nth-child(4) {
 }
 
 
+.text-with-icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+
+  p {
+    margin: 0;
+    color: var(--muted-foreground);
+    font-size: var(--font-size-sm);
+  }
+}
+
+.organisation-infos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+
+.logo {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
 .section-with-memoji {
   background-repeat: no-repeat;
   background-position-y: 106%;
   background-position-x: right;
   background-size: 150px;
   padding-bottom: 140px;
-
 
   &:hover {
     background-position-y: 104%;
@@ -371,33 +405,42 @@ footer {
 */
 
 /* About Section */
-.about-me {
-  background-image: url("/assets/images/aram-memoji-2.png");
+.about-me-page {
+  .about-me {
+    background-image: url("/assets/images/aram-memoji-2.png");
 
-  .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-md);
-    color: var(--foreground);
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-md);
+      color: var(--foreground);
+    }
+  }
+
+  /* Skills Section */
+
+  .programming-skills {
+    background-image: url("/assets/images/aram-memoji-6.png");
+  }
+
+  /* Languages Section */
+
+  .languages {
+    background-image: url("/assets/images/aram-memoji-8.png");
+
+  }
+
+  /* SoftKills Section */
+
+  .soft-skills {
+    background-image: url("/assets/images/aram-memoji-4.png");
   }
 }
 
-/* Skills Section */
+/*
+  Education Page
+*/
 
-.programming-skills {
-  background-image: url("/assets/images/aram-memoji-6.png");
-}
-
-/* Languages Section */
-.languages {
-  background-image: url("/assets/images/aram-memoji-8.png");
-
-}
-
-/* SoftKills Section */
-.soft-skills {
-  background-image: url("/assets/images/aram-memoji-4.png");
-}
 
 /* Tablet*/
 /*  768px */
