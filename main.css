@@ -28,7 +28,7 @@
   --gradient: linear-gradient(45deg, #ffa500, #ff6347);
 
   --shadow: rgba(255, 165, 0, 0.1) 0px 0px 0px 1px;
-  --shadow-hover: rgba(255, 165, 0, 0.05) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
+  --shadow-hover: rgba(255, 165, 0, 0.15) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
 
   --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
   --shadow-btn-hover: 0 0 0 2px var(--primary);
@@ -103,9 +103,32 @@ ul {
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--foreground);
+  font-weight: 700;
+  position: relative;
+}
+
+.inline-link {
+
+  &::before {
+    content: '';
+    background-color: var(--primary);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: var(--transition);
+  }
+
+  &:hover::before {
+    width: 0;
+    left: unset;
+    right: 0;
+  }
 }
 
 .container {
@@ -124,6 +147,7 @@ section {
 
   &:hover {
     box-shadow: var(--shadow-hover);
+    scale: 1.02;
   }
 
   .title {
@@ -184,12 +208,16 @@ section:nth-child(4) {
 
 .section-with-memoji {
   background-repeat: no-repeat;
-  background-position-y: 102%;
+  background-position-y: 106%;
   background-position-x: right;
   background-size: 150px;
   padding-bottom: 140px;
-}
 
+
+  &:hover {
+    background-position-y: 104%;
+  }
+}
 
 /*
 Animation
