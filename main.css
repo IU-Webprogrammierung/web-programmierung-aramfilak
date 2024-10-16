@@ -273,6 +273,26 @@ section:nth-child(4) {
 }
 
 
+.btn {
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  font-weight: 600;
+  transition: var(--transition);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: fit-content;
+
+  &.primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    background-image: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background-size: 200%;
+    animation: shine 3s infinite linear;
+  }
+}
+
 /*
 Animation
 */
@@ -300,6 +320,15 @@ Animation
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
   }
 }
 
@@ -424,7 +453,6 @@ footer {
   Home Page
 */
 
-
 .about-me-page {
 
   /* Sections */
@@ -456,9 +484,38 @@ footer {
 }
 
 /*
-  Education Page
+  Projects Page
 */
+.projects-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: var(--space-lg);
 
+
+  .project {
+    h4 {
+      margin-bottom: var(--space-sm);
+    }
+
+    .project-img {
+      height: 300px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      margin-bottom: var(--space-md);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .btn.primary {
+      margin-top: var(--space-xl);
+      margin-left: auto !important;
+    }
+  }
+}
 
 /* Tablet*/
 /*  768px */
