@@ -181,6 +181,16 @@ section:nth-child(4) {
   }
 }
 
+
+.section-with-memoji {
+  background-repeat: no-repeat;
+  background-position-y: 102%;
+  background-position-x: right;
+  background-size: 150px;
+  padding-bottom: 140px;
+}
+
+
 /*
 Animation
 */
@@ -335,11 +345,6 @@ footer {
 /* About Section */
 .about-me {
   background-image: url("/assets/images/aram-memoji-2.png");
-  background-repeat: no-repeat;
-  background-position-y: 102%;
-  background-position-x: center;
-  background-size: 150px;
-  padding-bottom: 140px;
 
   .content {
     display: grid;
@@ -351,14 +356,19 @@ footer {
 
 /* Skills Section */
 
-.my-skills {
+.programming-skills {
   background-image: url("/assets/images/aram-memoji-6.png");
-  background-repeat: no-repeat;
-  background-position-y: 104%;
-  background-position-x: center;
-  background-size: 150px;
-  padding-bottom: 140px;
+}
 
+/* Languages Section */
+.languages {
+  background-image: url("/assets/images/aram-memoji-8.png");
+
+}
+
+/* SoftKills Section */
+.soft-skills {
+  background-image: url("/assets/images/aram-memoji-4.png");
 }
 
 /* Tablet*/
@@ -385,7 +395,10 @@ footer {
     max-width: 1500px;
   }
 
-  .about-me {
-    background-position-x: right;
+  .skills {
+    display: grid;
+    gap: var(--space-lg);
+    grid-template-columns: 1fr 1fr 1fr;
+
   }
 }
