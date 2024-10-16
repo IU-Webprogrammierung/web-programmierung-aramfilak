@@ -157,6 +157,30 @@ section:nth-child(4) {
   animation: section-fade-in 1.1s var(--timeing);
 }
 
+.badge-container {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    color: var(--primary-foreground);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    transition: var(--transition);
+
+    &:hover {
+      background-color: var(--primary);
+      color: var(--background)
+    }
+  }
+}
+
 /*
 Animation
 */
@@ -323,6 +347,18 @@ footer {
     gap: var(--space-md);
     color: var(--foreground);
   }
+}
+
+/* Skills Section */
+
+.my-skills {
+  background-image: url("/assets/images/aram-memoji-6.png");
+  background-repeat: no-repeat;
+  background-position-y: 104%;
+  background-position-x: center;
+  background-size: 150px;
+  padding-bottom: 140px;
+
 }
 
 /* Tablet*/
