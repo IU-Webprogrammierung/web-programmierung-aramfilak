@@ -280,6 +280,30 @@ nav > ul {
   }
 }
 
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-lg);
+
+
+  a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+}
+
+
 /*
   Home Page
 */
