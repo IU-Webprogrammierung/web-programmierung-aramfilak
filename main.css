@@ -557,7 +557,7 @@ footer {
 
       .btn.primary {
         margin-top: var(--space-xl);
-        margin-left: auto !important;
+        margin-left: auto;
       }
     }
   }
@@ -575,6 +575,10 @@ footer {
 
   .tks {
     background-image: url("/assets/images/aram-memoji-7.png");
+  }
+
+  .badge-container {
+    margin-top: var(--space-sm) !important;
   }
 }
 
