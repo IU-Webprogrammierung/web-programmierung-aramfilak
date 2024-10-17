@@ -140,11 +140,12 @@ a {
 }
 
 section {
-  padding: var(--space-xl) var(--space-lg);
+  padding: var(--space-xxl) var(--space-xl);
+  margin-bottom: var(--space-xxl);
+
   background-color: var(--card);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-bottom: var(--space-lg);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -360,7 +361,7 @@ Animation
   justify-content: center;
   align-items: center;
   padding: var(--space-xl) var(--space-md);
-  margin-block: var(--space-lg);
+  margin-block: var(--space-xxl);
   transition: var(--transition);
   backdrop-filter: blur(200px);
   background-image: radial-gradient(closest-side at center, rgba(255, 165, 0, 0.16), var(--background));
@@ -456,7 +457,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-block: var(--space-lg);
-
+  margin-top: var(--space-xxl);
 
   a {
     display: flex;
