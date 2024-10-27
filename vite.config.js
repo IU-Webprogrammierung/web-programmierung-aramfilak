@@ -9,6 +9,8 @@ export default defineConfig({
         education: resolve(__dirname, 'education.html'),
         experience: resolve(__dirname, 'experience.html'),
         projects: resolve(__dirname, 'projects.html'),
+        mainJs: resolve(__dirname, 'main.js'),
+        mainCss: resolve(__dirname, 'main.css'),
       },
     },
   },
