@@ -1,157 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aram Filak</title>
-  <link rel="stylesheet" href="/main.css"/>
-  <!-- Preconnect to Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-</head>
-<body>
-<div class="container">
-  <header class="header">
-    <div class="profile-img">
-      <img src="assets/images/aram-memoji-1.png" alt="Aram Filak"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aram Filak</title>
+    <link rel="stylesheet" href="/main.css" />
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="profile-img">
+          <img src="assets/images/aram-memoji-1.png" alt="Aram Filak" />
+        </div>
+
+        <h1>Aram Filak</h1>
+        <p>Informatikstudent | Werkstudent</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/aram-filak-b0400022a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn Link" />
+          </a>
+          <a
+            href="https://github.com/aramfilak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/github.svg" alt="Github Link" />
+          </a>
+          <a
+            href="mailto:aram.filak@iu-study.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/mail.svg" alt="Email Link" />
+          </a>
+        </div>
+
+        <!--  Navigation  -->
+        <nav>
+          <ul>
+            <li><a href="/">Über mich</a></li>
+            <li><a class="active" href="/education.html"> Bildung </a></li>
+            <li><a href="/projects.html"> Projekte </a></li>
+            <li><a href="/experience.html"> Breufserfahrung </a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="eduction-page">
+        <!--  Eduction Timeline  -->
+        <section class="iu section-with-memoji">
+          <div class="title">
+            <img src="assets/icons/graduation-cap.svg" alt="Abschlusssymbol" />
+            <h3>Bachelor of Science Informatik</h3>
+          </div>
+          <div class="organisation-infos">
+            <div class="logo">
+              <img src="assets/images/iu-logo.png" alt="IU Logo" />
+            </div>
+            <div>
+              <div class="text-with-icon">
+                <img
+                  src="assets/icons/calendar-days.svg"
+                  alt="Kalendersymbol"
+                />
+                <p>März 2022 - Heute</p>
+              </div>
+              <div class="text-with-icon">
+                <img src="assets/icons/map-pinned.svg" alt="Standortsymbol" />
+                <p>Fernstudium an der IU Internationale Hochschule.</p>
+              </div>
+            </div>
+          </div>
+          <p>
+            Der Studiengang Informatik an der IU Internationale Hochschule
+            vermittelt mir ein breites Wissen in den Bereichen
+            Softwareentwicklung, Datenbanken, IT-Sicherheit und Web-Entwicklung.
+            Durch die praxisnahe Ausbildung und die Möglichkeit, das Gelernte
+            direkt in Projekten anzuwenden, kann ich mein Wissen stetig
+            erweitern und vertiefen. Und hey, inzwischen verstehe ich sogar,
+            warum der Computer manchmal „404“ sagt – er sucht wohl nur
+            verzweifelt nach seinem Kaffee!
+          </p>
+          <ul class="badge-container">
+            <li class="badge">Mathematische Grundlagen der Informatik</li>
+            <li class="badge">Algorithmen & Datenstrukturen</li>
+            <li class="badge">Software Engineering</li>
+            <li class="badge">IT-Sicherheit</li>
+            <li class="badge">Programmierung & Web-Entwicklung</li>
+            <li class="badge">Datenmodellierung& Datenbanken</li>
+          </ul>
+        </section>
+        <section class="leb section-with-memoji">
+          <div class="title">
+            <img src="assets/icons/graduation-cap.svg" alt="Abschlusssymbol" />
+            <h3>Fachhochschulreife</h3>
+          </div>
+
+          <div class="organisation-infos">
+            <div class="logo">
+              <img src="assets/images/leb-logo.jpg" alt="IU Logo" />
+            </div>
+            <div>
+              <div class="text-with-icon">
+                <img
+                  src="assets/icons/calendar-days.svg"
+                  alt="Kalendersymbol"
+                />
+                <p>August 2018 - Juni 2020</p>
+              </div>
+              <div class="text-with-icon">
+                <img src="assets/icons/map-pinned.svg" alt="Standortsymbol" />
+                <p>
+                  Ludwig-Erhard-Berufskollege für Wirtschaft und Verwaltung in
+                  Bonn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <ul class="badge-container">
+            <li class="badge">Wirtschaftsinformatik</li>
+            <li class="badge">Rechnungswesen</li>
+            <li class="badge">Wirtschaftslehre</li>
+          </ul>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <a
+          href="mailto:aram.filak@iu-study.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>aram.filak@iu-study.org</p>
+          <img src="assets/icons/mail.svg" alt="Email Link" />
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/aram-filak-b0400022a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn Link" />
+          </a>
+          <a
+            href="https://github.com/aramfilak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/icons/github.svg" alt="Github Link" />
+          </a>
+        </div>
+      </footer>
     </div>
-
-    <h1>Aram Filak</h1>
-    <p>Informatikstudent | Werkstudent</p>
-
-    <!-- Social Links -->
-    <div class="social-links">
-      <a
-        href="https://www.linkedin.com/in/aram-filak-b0400022a/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn Link"/>
-      </a>
-      <a
-        href="https://github.com/aramfilak"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/icons/github.svg" alt="Github Link"/>
-      </a>
-      <a
-        href="mailto:aram.filak@iu-study.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/icons/mail.svg" alt="Email Link"/>
-      </a>
-    </div>
-
-    <!--  Navigation  -->
-    <nav>
-      <ul>
-        <li><a href="/">Über mich</a></li>
-        <li><a class="active" href="/education.html"> Bildung </a></li>
-        <li><a href="/projects.html"> Projekte </a></li>
-        <li><a href="/experience.html"> Breufserfahrung </a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="eduction-page">
-    <!--  Eduction Timeline  -->
-    <section class="iu section-with-memoji">
-      <div class="title">
-        <img src="assets/icons/graduation-cap.svg" alt="Abschlusssymbol"/>
-        <h3>Bachelor of Science Informatik</h3>
-      </div>
-      <div class="organisation-infos">
-        <div class="logo">
-          <img src="assets/images/iu-logo.png" alt="IU Logo"/>
-        </div>
-        <div>
-          <div class="text-with-icon">
-            <img src="assets/icons/calendar-days.svg" alt="Kalendersymbol"/>
-            <p>März 2022 - Heute</p>
-          </div>
-          <div class="text-with-icon">
-            <img src="assets/icons/map-pinned.svg" alt="Standortsymbol"/>
-            <p>Fernstudium an der IU Internationale Hochschule.</p>
-          </div>
-        </div>
-      </div>
-      <p> Der Studiengang Informatik an der IU Internationale Hochschule vermittelt mir ein breites Wissen in den
-        Bereichen Softwareentwicklung, Datenbanken, IT-Sicherheit und Web-Entwicklung. Durch die praxisnahe Ausbildung
-        und die Möglichkeit, das Gelernte direkt in Projekten anzuwenden, kann ich mein Wissen stetig erweitern und
-        vertiefen. Und hey, inzwischen verstehe ich sogar, warum der Computer manchmal „404“ sagt – er sucht wohl nur
-        verzweifelt nach seinem Kaffee! </p>
-      <ul class="badge-container">
-        <li class="badge">Mathematische Grundlagen der Informatik</li>
-        <li class="badge">Algorithmen & Datenstrukturen</li>
-        <li class="badge">Software Engineering</li>
-        <li class="badge">IT-Sicherheit</li>
-        <li class="badge">Programmierung & Web-Entwicklung</li>
-        <li class="badge">Datenmodellierung& Datenbanken</li>
-      </ul>
-    </section>
-    <section class="leb section-with-memoji">
-      <div class="title">
-        <img src="assets/icons/graduation-cap.svg" alt="Abschlusssymbol"/>
-        <h3>Fachhochschulreife</h3>
-      </div>
-
-      <div class="organisation-infos">
-        <div class="logo">
-          <img src="assets/images/leb-logo.jpg" alt="IU Logo"/>
-        </div>
-        <div>
-          <div class="text-with-icon">
-            <img src="assets/icons/calendar-days.svg" alt="Kalendersymbol"/>
-            <p>August 2018 - Juni 2020</p>
-          </div>
-          <div class="text-with-icon">
-            <img src="assets/icons/map-pinned.svg" alt="Standortsymbol"/>
-            <p>
-              Ludwig-Erhard-Berufskollege für Wirtschaft und Verwaltung in Bonn.
-            </p>
-          </div>
-        </div>
-      </div>
-      <ul class="badge-container">
-        <li class="badge">Wirtschaftsinformatik</li>
-        <li class="badge">Rechnungswesen</li>
-        <li class="badge">Wirtschaftslehre</li>
-      </ul>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <a
-      href="mailto:aram.filak@iu-study.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <p>aram.filak@iu-study.org</p>
-      <img src="assets/icons/mail.svg" alt="Email Link"/>
-    </a>
-    <div class="social-links">
-      <a
-        href="https://www.linkedin.com/in/aram-filak-b0400022a/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn Link"/>
-      </a>
-      <a
-        href="https://github.com/aramfilak"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="assets/icons/github.svg" alt="Github Link"/>
-      </a>
-    </div>
-  </footer>
-</div>
-<script type="module" src="/main.js"></script>
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

@@ -68,7 +68,7 @@ html {
 }
 
 body {
-  font-family: "Mulish", serif;
+  font-family: 'Mulish', serif;
   font-optical-sizing: auto;
   background-color: var(--background);
 }
@@ -115,7 +115,7 @@ a {
 
 .inline-link {
   &::before {
-    content: "";
+    content: '';
     background-color: var(--primary);
     position: absolute;
     width: 100%;
@@ -150,7 +150,7 @@ section {
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: var(--y, 50%);
     left: var(--x, 50%);
@@ -282,7 +282,7 @@ section {
     padding-left: 1rem;
 
     &:before {
-      content: "•";
+      content: '•';
       color: var(--primary);
       margin-right: 0.5rem;
     }
@@ -485,7 +485,7 @@ footer {
   /* Sections */
 
   .about-me {
-    background-image: url("/assets/images/aram-memoji-2.png");
+    background-image: url('/assets/images/aram-memoji-2.png');
 
     .content {
       display: grid;
@@ -496,15 +496,15 @@ footer {
   }
 
   .programming-skills {
-    background-image: url("/assets/images/aram-memoji-6.png");
+    background-image: url('/assets/images/aram-memoji-6.png');
   }
 
   .languages {
-    background-image: url("/assets/images/aram-memoji-8.png");
+    background-image: url('/assets/images/aram-memoji-8.png');
   }
 
   .soft-skills {
-    background-image: url("/assets/images/aram-memoji-10.png");
+    background-image: url('/assets/images/aram-memoji-10.png');
   }
 }
 
@@ -514,11 +514,11 @@ footer {
 
 .eduction-page {
   .iu {
-    background-image: url("/assets/images/aram-memoji-6.png");
+    background-image: url('/assets/images/aram-memoji-6.png');
   }
 
   .leb {
-    background-image: url("/assets/images/aram-memoji-9.png");
+    background-image: url('/assets/images/aram-memoji-9.png');
   }
 }
 
@@ -567,11 +567,11 @@ footer {
 
 .experience-page {
   .tks-energy {
-    background-image: url("/assets/images/aram-memoji-5.png");
+    background-image: url('/assets/images/aram-memoji-5.png');
   }
 
   .tks {
-    background-image: url("/assets/images/aram-memoji-7.png");
+    background-image: url('/assets/images/aram-memoji-7.png');
   }
 
   .badge-container {
