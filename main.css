@@ -28,7 +28,8 @@
   --gradient: linear-gradient(45deg, #ffa500, #ff6347);
 
   --shadow: rgba(255, 165, 0, 0.1) 0px 0px 0px 1px;
-  --shadow-hover: rgba(255, 165, 0, 0.05) 0px 50px 100px -20px, rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
+  --shadow-hover: rgba(255, 165, 0, 0.05) 0px 50px 100px -20px,
+    rgba(255, 165, 0, 0.12) 0px 30px 60px -30px;
 
   --shaodw-btn: 0 0 0 1px rgba(0, 0, 0, 0.1);
   --shadow-btn-hover: 0 0 0 2px var(--primary);
@@ -105,7 +106,6 @@ ul {
   list-style: none;
 }
 
-
 a {
   text-decoration: none;
   color: var(--foreground);
@@ -114,9 +114,8 @@ a {
 }
 
 .inline-link {
-
   &::before {
-    content: '';
+    content: "";
     background-color: var(--primary);
     position: absolute;
     width: 100%;
@@ -151,20 +150,23 @@ section {
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: var(--y, 50%);
     left: var(--x, 50%);
     width: 35rem;
     height: 35rem;
-    background: radial-gradient(closest-side at center, rgba(255, 165, 0, 0.12), transparent);
+    background: radial-gradient(
+      closest-side at center,
+      rgba(255, 165, 0, 0.12),
+      transparent
+    );
     transform: translate(-50%, -50%);
     transition: opacity 0.3s linear;
     opacity: 0;
     pointer-events: none;
     z-index: -1;
   }
-
 
   &:hover {
     box-shadow: var(--shadow-hover);
@@ -183,9 +185,9 @@ section {
 
     h3 {
       background: var(--gradient);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
     }
   }
 }
@@ -197,7 +199,6 @@ section:nth-child(1) {
 section {
   animation: section-fade-in 0.9s var(--timeing);
 }
-
 
 .badge-container {
   max-width: 500px;
@@ -218,11 +219,10 @@ section {
 
     &:hover {
       background-color: var(--primary);
-      color: var(--background)
+      color: var(--background);
     }
   }
 }
-
 
 .text-with-icon {
   display: flex;
@@ -243,7 +243,6 @@ section {
   align-items: center;
   margin-bottom: var(--space-md);
 }
-
 
 .logo {
   width: 75px;
@@ -283,13 +282,12 @@ section {
     padding-left: 1rem;
 
     &:before {
-      content: '•';
+      content: "•";
       color: var(--primary);
       margin-right: 0.5rem;
     }
   }
 }
-
 
 .btn {
   border-radius: var(--radius);
@@ -305,7 +303,12 @@ section {
   &.primary {
     background-color: var(--primary);
     color: var(--primary-foreground);
-    background-image: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    background-image: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
     background-size: 200%;
     animation: shine 3s infinite linear;
   }
@@ -364,7 +367,11 @@ Animation
   margin-block: var(--space-xxl);
   transition: var(--transition);
   backdrop-filter: blur(200px);
-  background-image: radial-gradient(closest-side at center, rgba(255, 165, 0, 0.16), var(--background));
+  background-image: radial-gradient(
+    closest-side at center,
+    rgba(255, 165, 0, 0.16),
+    var(--background)
+  );
 
   .profile-img {
     max-width: min(100%, 200px);
@@ -389,8 +396,6 @@ Animation
     opacity: 1;
     transform: perspective(1000px) translate3d(0px, 0px, 0px);
   }
-
-
 }
 
 p {
@@ -442,14 +447,14 @@ nav > ul {
       background: var(--background);
       box-shadow: var(--shaodw-btn);
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         color: var(--primary-foreground);
         box-shadow: var(--shadow-btn-hover);
       }
     }
   }
 }
-
 
 /* Footer */
 footer {
@@ -470,16 +475,13 @@ footer {
       margin: 0;
     }
   }
-
 }
-
 
 /*
   Home Page
 */
 
 .about-me-page {
-
   /* Sections */
 
   .about-me {
@@ -497,17 +499,14 @@ footer {
     background-image: url("/assets/images/aram-memoji-6.png");
   }
 
-
   .languages {
     background-image: url("/assets/images/aram-memoji-8.png");
-
   }
 
   .soft-skills {
     background-image: url("/assets/images/aram-memoji-10.png");
   }
 }
-
 
 /*
   Education Page
@@ -530,7 +529,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: var(--space-lg);
-
 
   .project {
     padding: 0;
@@ -563,7 +561,6 @@ footer {
   }
 }
 
-
 /*
   Experience Page
 */
@@ -582,7 +579,6 @@ footer {
   }
 }
 
-
 /* Tablet*/
 /*  768px */
 @media (min-width: 48em) {
@@ -594,7 +590,6 @@ footer {
     padding-inline: 4rem;
   }
 }
-
 
 /* Desktop*/
 /* 992px */
@@ -611,6 +606,5 @@ footer {
     display: grid;
     gap: var(--space-lg);
     grid-template-columns: 1fr 1fr 1fr;
-
   }
 }
